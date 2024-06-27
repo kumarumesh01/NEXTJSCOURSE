@@ -11,27 +11,15 @@ const HomePage = () => {
         <meta name="description" content="This is the homepage of my Next.js application." />
         <link rel="icon" href="/logo_umesh.png" />
       </Head>
-
-      <header className={styles.header}>
-        <nav className={styles.nav}>
-          {/* Navigation links centered */}
-          <div className={styles.navLinks}>
-            <Link href="/" passHref>
-              <span className="cursor-pointer text-white hover:underline">Home</span>
-            </Link>
-            <Link href="/about" passHref>
-              <span className="cursor-pointer text-white hover:underline">About</span>
-            </Link>
-          </div>
-          {/* User image on the right */}
-          <div className={styles.userImage}>
-            <Link href="/" passHref>
-              <img src="/photo_umesh.jpg" alt="Umesh's Photo" className="h-8 w-8 rounded-full cursor-pointer" />
-            </Link>
-          </div>
-        </nav>
-      </header>
-
+      <div className="w-full bg-violet-600 flex justify-between items-center px-8 py-8 text-white" style={{ height: '420px' }}>
+        <div className="text-left pr-4">
+          <p className="text-2xl font-bold">Hello,</p>
+          <p className="text-4xl font-bold">I'm Umesh Kumar,</p>
+          <p className="text-2xl font-bold">B.Tech in Electrical Engineering from IIT Delhi.</p>
+          <p className="text-2xl font-bold text-black ">Software Developer | Embedded Engineer.</p>
+        </div>
+        <img src="/photo_umesh.jpg" alt="Umesh's Photo" className="h-15 w-15 rounded-full cursor-pointer ml-auto" style={{ paddingRight: '1rem' }} />
+      </div>
       {/* Main content section */}
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to My Website</h1>
