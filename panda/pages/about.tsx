@@ -1,7 +1,7 @@
 // pages/about.tsx
 import React from 'react';
 
-const AboutPage = () => {
+const About = () => {
     return (
         <div>
             <h1>About Us</h1>
@@ -10,4 +10,4 @@ const AboutPage = () => {
     );
 };
 
-export default AboutPage;
+export default About;
